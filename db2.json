@@ -1,0 +1,20 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "profession": "prof"
+    },
+    {
+      "id": 2,
+      "profession": "ingenieur"
+    },
+    {
+      "id": 3,
+      "profession": "ingenieur"
+    },
+    {
+      "id": 4,
+      "profession": "jouer"
+    }
+  ]
+}
