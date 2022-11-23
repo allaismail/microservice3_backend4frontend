@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: micro3
+  namespace: tp2
+spec:
+  selector:
+    matchLabels:
+      app: micro3
+  template:
+    metadata:
+      labels:
+        app: micro3
+    spec:
+      containers:
+      - name: micro3
+        image: allaismail/microservice3_back4front_end
+        env:
+        - name: IP_M1
+          value: '10.64.140.46'
+        - name: PORT_M1
+          value: "8000"
+        - name: IP_M2
+          value: '10.64.140.47'
+        - name: PORT_M2
+          value: "8000"
+
+        ports:
+        - containerPort: 8000
+
